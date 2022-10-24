@@ -1,0 +1,55 @@
+<!--
+   File name: Contact.ejs
+   Stu name: Huyen Anh Phan
+   Stu #: 301216123
+   Date: 10/16/22
+-->
+<%-include ('partials/header.ejs')%>
+<%-include ('partials/main_nav.ejs')%>
+
+  <h1><%= title %></h1>
+   <hr/>
+
+   <div id="formDiv">
+      <h3>Leave a Message:</h3>
+      <div>
+          <form id="form" method="post" action="/">
+              <table>
+                  <tr>
+                      <td class="errStar"><div></div></td>
+                      <td><div class="errDt"></div><label for="firstName">First Name: </label></td>
+                      <td><input id="firstName" name="firstName" type="text" class="form-control form-control-sm" /></td>
+                  </tr>
+                  <tr>
+                      <td class="errStar"><div></div></td>
+                      <td><div class="errDt"></div><label for="lastName">Last Name:</label></td>
+                      <td><input id="lastName" type="text" class="form-control form-control-sm" /></td>
+                  </tr>
+                  <tr>
+                     <td class="errStar"><div></div></td>
+                     <td><div class="errDt"></div><label for="number">Contact Number:</label></td>
+                     <td><input id="number" type="number" class="form-control form-control-sm" /></td>
+                 </tr>
+                  <tr>
+                      <td class="errStar"><div></div></td>
+                      <td><div class="errDt"></div><label for="email">Email Address: </label></td>
+                      <td><input id="email" type="email" class="form-control form-control-sm" /></td>
+                  </tr>
+                  <tr>
+                     <td class="errStar"><div></div></td>
+                     <td><div class="errDt"></div><label for="message">Message: </label></td>
+                     <td><textarea id="message" type="text" class="form-control form-control-sm"></textarea>
+                 </tr>
+              </table>
+              <div id="submitForm">
+                  <a href="https://huyenanhphan.herokuapp.com/home"><input id="submitBtn" type="submit" class="btn btn-info" value="Submit"/></a>
+                  <input id="clearBtn" type="button" class="btn btn-info" value="Clear Form" />
+              </div>
+          </form>
+      </div>
+  </div>
+<hr />
+<p>Contact me using the following details: <br><b>Phone Number: 647-878-0772 <br>Email: hphan26@my.centennialcollege.ca</b></p>
+
+   <%-include ('partials/bottom_nav.ejs')%>
+<%-include ('partials/footer.ejs')%>   
