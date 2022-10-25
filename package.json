@@ -5,6 +5,10 @@
   "scripts": {
     "start": "node ./server.js"
   },
+  "engines": {
+    "node": "^12.18.3",
+    "npm":"^6.0.0"
+  },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.2.0",
     "@truffle/hdwallet-provider": "^2.0.15",
@@ -37,7 +41,7 @@
   "main": "server.js",
   "repository": {
     "type": "git",
-    "url": "(https://github.com/huyenanhphan/assignment2comp229.git)"
+    "url": "git+https://github.com/huyenanhphan/assignment2comp229.git"
   },
   "author": "hanh",
   "license": "ISC",
